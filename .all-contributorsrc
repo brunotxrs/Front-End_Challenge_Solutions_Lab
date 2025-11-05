@@ -1,0 +1,29 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitType": "docs",
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "brunotxrs",
+      "name": "Bruno Teixeira",
+      "avatar_url": "https://avatars.githubusercontent.com/u/183097017?v=4",
+      "profile": "https://github.com/brunotxrs",
+      "contributions": [
+        "code",
+        "doc",
+        "infra",
+        "projectManagement"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "Front-End_Challenge_Solutions_Lab",
+  "projectOwner": "brunotxrs"
+}
