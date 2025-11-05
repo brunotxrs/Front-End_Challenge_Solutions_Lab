@@ -44,13 +44,6 @@ Toda contribuição é bem-vinda! Se você tem uma solução validada para um de
 
 ---
 
-## ⭐ Nossos Contribuidores
-
-Um agradecimento especial a todas as pessoas maravilhosas que ajudaram a construir este projeto!
-
-
----
-
 ## 📝 Licença
 
 Este projeto está sob a licença [MIT](LICENSE).
