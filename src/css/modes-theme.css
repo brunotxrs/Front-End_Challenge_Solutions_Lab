@@ -1,0 +1,62 @@
+.spacer-top {
+    height: 1.5rem;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding: 0 0 0 0;
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+.spacer-top .box-space-top {
+    height: 100%;
+    width: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    border-radius: 1.25rem;
+    padding: 5px  0;
+}
+
+.spacer-top .box-space-top #mode-dark, #mode-light{
+    transition: 0.9s all;
+}
+
+.outline-light {
+    outline: 1px solid var(--color-light);
+    transition: 0.9s all;
+}
+
+.outline-dark {
+    outline: 1px solid var(--color-dark);
+    transition: 0.9s all;
+}
+
+
+
+.movingToLeft {
+    transform: translateX(-20px);
+    animation: moveToRight 0.9s ease-in-out;
+}
+@keyframes moveToRight {
+    from {
+    transform: translateX(0px);
+    }
+    to {
+    transform: translateX(-20px);
+    }
+}
+
+.movingToRight {
+    transform: translateX(0px);
+    animation: moveToLeft 0.9s ease-in-out;
+}
+@keyframes moveToLeft {
+    from {
+    transform: translateX(-20px);
+    }
+    to {
+    transform: translateX(0px);
+    } 
+}
