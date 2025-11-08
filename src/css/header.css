@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: var(--spacing-lg);
+    padding: var(--spacing-base);
     border-bottom: 2px solid var(--color-primary);
     user-select: none;
     
@@ -19,20 +19,22 @@
 
 }
 
-@media (width <= 400px){
+@media (width <= 450px){
     #header h1 {
-        font-size: var(--font-size-sm);
+        font-size: var(--font-size-base);
     }
 }
 
-@media (width >= 401px) and (width <= 800px){
+@media (width >= 451px) and (width <= 800px){
     #header h1 {
+        max-width: 450px;
         font-size: var(--font-size-lg);
     }
 }
 
 @media (width > 800px){
     #header h1 {
+        max-width: 700px;
         font-size: var(--font-xl);
     }
 }
@@ -41,4 +43,16 @@
     text-align: justify;
     font-size: var(--font-size-sm);
     max-width: 600px;
+    text-indent: 0.625rem;
+}
+
+@media (width >= 451px) and (width <= 800px){
+    #header p {
+        font-size: var(--font-size-sm);
+    }
+}
+@media (width > 800px){
+    #header p {
+        font-size: var(--font-size-base);
+    }
 }
