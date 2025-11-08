@@ -5,7 +5,7 @@
     align-items: center;
     padding: 0 0 0 0;
     width: 100%;
-    max-width: 500px;
+    max-width: 800px;
     
 }
 
@@ -23,6 +23,17 @@
     transition: 0.9s all;
 }
 
+.spacer-top .box-space-top #mode-dark:hover {
+    fill: var(--color-secondary);
+    filter: drop-shadow(0px 0px 2px var(--color-secondary));
+}
+
+.spacer-top .box-space-top #mode-light:hover {
+    fill: var(--color-warning);
+    filter: drop-shadow(0px 0px 2px var(--color-warning));
+}
+
+
 .outline-light {
     outline: 1px solid var(--color-light);
     transition: 0.9s all;
@@ -31,6 +42,14 @@
 .outline-dark {
     outline: 1px solid var(--color-dark);
     transition: 0.9s all;
+}
+
+.outline-light:hover{
+    outline: 1px solid var(--color-secondary);
+}
+
+.outline-dark:hover{
+    outline: 1px solid var(--color-warning);
 }
 
 
