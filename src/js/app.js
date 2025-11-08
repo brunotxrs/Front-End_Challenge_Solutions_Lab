@@ -1,6 +1,9 @@
 // Seleciona todos os botões de alternância de tema com IDs que começam com "mode-"
 const themeToggle = document.querySelectorAll('[id^="mode-"]');
 
+const linksDark = document.querySelectorAll('.links-dark');
+const linksLight = document.querySelectorAll('.links-light');
+
 // Adiciona um ouvinte de evento de clique a cada botão
 themeToggle.forEach(button  => {
 
@@ -29,6 +32,16 @@ themeToggle.forEach(button  => {
            document.getElementById('mode-light').classList.add('movingToLeft');
 
            document.getElementById('mode-dark').classList.add('hidden');
+
+           linksDark.forEach(link => {
+               link.classList.remove('links-dark');
+               link.classList.add('links-light');
+           });
+
+           linksLight.forEach(link => {
+               link.classList.remove('links-light');
+               link.classList.add('links-dark');
+           });
      
 
        } else {
@@ -43,6 +56,17 @@ themeToggle.forEach(button  => {
            document.getElementById('mode-light').classList.add('hidden');
 
            document.getElementById('mode-dark').classList.add('movingToRight');
+
+
+           linksDark.forEach(link => {
+               link.classList.remove('links-light');
+               link.classList.add('links-dark');
+           });
+
+           linksLight.forEach(link => {
+               link.classList.remove('links-dark');
+               link.classList.add('links-light');
+           });
 
 
      
