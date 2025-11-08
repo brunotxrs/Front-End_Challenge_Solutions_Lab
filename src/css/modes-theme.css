@@ -23,17 +23,6 @@
     transition: 0.9s all;
 }
 
-.spacer-top .box-space-top #mode-dark:hover {
-    fill: var(--color-secondary);
-    filter: drop-shadow(0px 0px 2px var(--color-secondary));
-}
-
-.spacer-top .box-space-top #mode-light:hover {
-    fill: var(--color-warning);
-    filter: drop-shadow(0px 0px 2px var(--color-warning));
-}
-
-
 .outline-light {
     outline: 1px solid var(--color-light);
     transition: 0.9s all;
@@ -44,14 +33,23 @@
     transition: 0.9s all;
 }
 
-.outline-light:hover{
+.outline-light:hover {
     outline: 1px solid var(--color-secondary);
+
+    svg {
+        fill: var(--color-secondary);
+        filter: drop-shadow(0px 0px 2px var(--color-secondary));
+    }
 }
 
 .outline-dark:hover{
     outline: 1px solid var(--color-warning);
-}
 
+    svg{
+        fill: var(--color-warning);
+        filter: drop-shadow(0px 0px 2px var(--color-warning));
+    }
+}
 
 
 .movingToLeft {
