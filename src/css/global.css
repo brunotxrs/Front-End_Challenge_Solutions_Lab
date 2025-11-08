@@ -27,8 +27,8 @@ html {
     --color-dark: #292b2c;
 
     --font-xl: 2rem;
-    --font-size-base: 1rem;
     --font-size-lg: 1.25rem;
+    --font-size-base: 1rem;
     --font-size-sm: 0.875rem;
 
     --spacing-base: 1rem;
@@ -49,6 +49,10 @@ body {
     font-size: var(--font-size-base);
     line-height: 1.6;
     padding: var(--spacing-base);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
