@@ -1,0 +1,120 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing-base) 0;
+
+    width: 100%;
+    height: 15.625rem;
+
+}
+
+#main section {
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+}
+
+#main section h2 {
+    text-align: center;
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--spacing-base);
+}
+
+#main section ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: var(--spacing-base);
+    padding: 0 var(--spacing-base);
+}
+
+#main section ul li a {
+    font-size: var(--font-size-base);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    
+    padding: var(--spacing-sm);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: 1s;
+}
+
+#main section ul li a i {
+    position: relative;
+    transition: 1s;
+    z-index: 3;
+}
+
+#main section ul li a span {
+    font-family: var(--font-code);
+    
+    position: relative;
+    transition: 1s;
+    z-index: 3;
+}
+
+#main section ul li:nth-child(1) a .fa-right-long,
+#main section ul li:nth-child(2) a .fa-right-long,
+#main section ul li:nth-child(3) a .fa-right-long {
+    display: none;
+}
+
+#main section ul li:nth-child(1) a::before,
+#main section ul li:nth-child(2) a::before,
+#main section ul li:nth-child(3) a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-info);
+    border-radius: 10px;
+    z-index: 1;
+    transition: 1s;
+    transform: scaleX(0);
+    transform-origin: left;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--color-info);
+
+    
+}
+
+
+
+#main section ul li:nth-child(1) a:hover .fa-right-long,
+#main section ul li:nth-child(2) a:hover .fa-right-long,
+#main section ul li:nth-child(3) a:hover .fa-right-long {
+    display: inline;
+    position: absolute;
+    transition: 1s;
+
+    transform: translateX(270px);
+    animation: toRight 0.9s ease-in-out;
+ 
+}
+
+#main section ul li a:hover::before {
+    transform: scaleX(1);
+}
+
+#main section ul li a:hover i,
+#main section ul li a:hover span {
+    transform: rotateX(360deg);
+
+}
+
+
+@keyframes toRight {
+    from {
+    transform: translateX(-100px);
+    }
+    to {
+    transform: translateX(270px);
+    }
+}
