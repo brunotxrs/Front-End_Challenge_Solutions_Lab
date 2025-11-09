@@ -1,12 +1,12 @@
 #header {
+    
+    user-select: none;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: var(--spacing-base);
-    border-bottom: 2px solid var(--color-primary);
-    user-select: none;
-    
+    border-bottom: 0.125rem solid var(--color-secondary);
 }
 
 #header h1 {
@@ -15,23 +15,23 @@
     font-family: var(--font-code);
     padding: 0 0 0.5rem 0;
     width: 100%;
-    max-width: 500px; 
+    max-width: 31.25rem; 
     font-size: var(--font-size-base);
    
 
 }
 
 
-@media (width >= 451px) and (width <= 800px){
+@media (width >= 28.1875rem) and (width <= 50rem){
     #header h1 {
-        max-width: 585px;
+        max-width: 36.5625rem;
         font-size: var(--font-xl);
     }
 }
 
-@media (width > 800px){
+@media (width > 50rem){
     #header h1 {
-        max-width: 700px;
+        max-width: 43.75rem;
         font-size: var(--font-xl);
     }
 }
@@ -43,12 +43,12 @@
     text-indent: 0.625rem;
 }
 
-@media (width >= 451px) and (width <= 800px){
+@media (width >= 28.1875rem) and (width <= 50rem){
     #header p {
         font-size: var(--font-size-sm);
     }
 }
-@media (width > 800px){
+@media (width > 50rem){
     #header p {
         font-size: var(--font-size-base);
     }
