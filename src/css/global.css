@@ -49,8 +49,22 @@ body {
     padding: var(--spacing-base);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    height: 100vh;
+}
+
+@media (width >= 28.1875rem) {
+    body {
+        justify-content: space-evenly;
+        height: 80vh;
+    }
+}
+
+@media (width >= 50rem) {
+    body {
+        height: 100vh;
+    }
 }
 
 ul {
