@@ -39,7 +39,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
     gap: var(--spacing-base);
     padding: 0 var(--spacing-base);
 }
@@ -66,12 +65,12 @@
     border-radius: 0.625rem;
     overflow: hidden;
     position: relative;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 #main section ul li a i {
     position: relative;
-    transition: 1s;
+    transition: 0.5s;
     z-index: 3;
 }
 
@@ -79,7 +78,7 @@
     font-family: var(--font-code);
     
     position: relative;
-    transition: 1s;
+    transition: 0.5s;
     z-index: 3;
 }
 
@@ -106,7 +105,7 @@
     height: 100%;
     border-radius: 0.625rem;
     z-index: 1;
-    transition: 1s;
+    transition: 0.5s;
     transform: scaleX(0);
     transform-origin: left;
     overflow: hidden;
@@ -129,22 +128,32 @@
 #main section ul li:nth-child(3) a:hover .fa-right-long {
     display: inline;
     position: absolute;
-    transition: 1s;
+    transition: 0.5s;
 
-    transform: translateX(16.875rem);
+    transform: translateX(270px);
     animation: toRight 0.9s ease-in-out;
  
 }
+/* Adjustments for different screen sizes */
 
-@media (width >= 28.1875rem) and (width <= 50rem){
+@media (min-width: 376px) and (max-width: 450px){
     #main section ul li:nth-child(1) a:hover .fa-right-long,
     #main section ul li:nth-child(2) a:hover .fa-right-long,
     #main section ul li:nth-child(3) a:hover .fa-right-long {
-        transform: translateX(23.125rem);
+        transform: translateX(302px);
     }
 }
 
-@media (width > 50rem){
+
+@media (min-width: 451px) and (max-width: 800px){
+    #main section ul li:nth-child(1) a:hover .fa-right-long,
+    #main section ul li:nth-child(2) a:hover .fa-right-long,
+    #main section ul li:nth-child(3) a:hover .fa-right-long {
+        transform: translateX(370px);
+    }
+}
+
+@media (min-width: 50rem){
     #main section ul li:nth-child(1) a:hover .fa-right-long,
     #main section ul li:nth-child(2) a:hover .fa-right-long,
     #main section ul li:nth-child(3) a:hover .fa-right-long {
@@ -173,7 +182,19 @@
 }
 
 
-@media (width >= 28.1875rem) and (width <= 50rem){
+@media (min-width: 376px) and (max-width: 450px){
+      @keyframes toRight {
+        from {
+        transform: translateX(-6.25rem);
+        }
+        to {
+        transform: translateX(302px);
+        }
+    }
+
+}
+
+@media (min-width: 451px) and (max-width: 50rem){
     @keyframes toRight {
         from {
         transform: translateX(-6.25rem);
@@ -184,7 +205,7 @@
     }
 }
 
-@media (width > 50rem){
+@media (min-width: 50rem){
     @keyframes toRight {
         from {
         transform: translateX(-6.25rem);
