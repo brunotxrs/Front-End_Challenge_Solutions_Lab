@@ -1,0 +1,116 @@
+.theme-dark {
+    background: var(--color-dark);
+    color: var(--color-light);
+    transition: 0.9s all;
+}
+
+.theme-light {
+    background: var(--color-light);
+    color: var(--color-dark);
+    transition: 0.9s all;
+}
+
+.links-dark {
+    background: var(--color-light);
+    color: var(--color-dark);
+    transition: 0.9s all;
+}
+
+.links-dark:hover{
+    color: var(--color-light);
+    text-shadow: 1px 1px 2px var(--color-dark);
+}
+
+.links-light:hover{
+    color:  var(--color-dark);
+    text-shadow: 1px 1px 2px var(--color-light);
+}
+
+.links-light {
+    color: var(--color-light);
+    background: var(--color-dark);
+    transition: 0.9s all;
+}
+
+.hidden {
+    display: none;
+}
+
+.animation-dark {
+    width: 0;
+    overflow: hidden; 
+    white-space: nowrap;
+
+    border-right: .10em solid var(--color-light); /* Simula o cursor */
+    transition: 0.9s all;
+
+    animation: 
+        /* 1. Animação de digitação (revelando o texto) */
+        typing var(--typing-speed) steps(var(--typing-steps), end),
+        /* 2. Animação de piscar do cursor */
+        blink-caret-dark .50s step-end infinite;
+
+
+}
+
+.animation-light {
+    width: 0;
+    overflow: hidden; 
+    white-space: nowrap;
+
+    border-right: .10em solid var(--color-dark); /* Simula o cursor */
+
+    transition: 0.9s all;
+
+
+    animation: 
+        /* 1. Animação de digitação (revelando o texto) */
+        typing var(--typing-speed) steps(var(--typing-steps), end),
+        /* 2. Animação de piscar do cursor */
+        blink-caret-light .50s step-end infinite;
+}
+
+
+
+
+
+/* --- Keyframes da Animação de Digitação --- */
+@keyframes typing {
+    from { width: 0 }
+    /* Para criar o efeito de digitação, a largura final deve ser 100% */
+    to { width: 100% }
+}
+
+/* --- Keyframes da Animação do Cursor Piscando --- */
+@keyframes blink-caret-dark {
+    from, to { border-color: transparent }
+    /* A cada passo, o cursor aparece e desaparece */
+    50% { border-color: var(--color-light); } 
+}
+
+@keyframes blink-caret-light {
+    from, to { border-color: transparent }
+    /* A cada passo, o cursor aparece e desaparece */
+    50% { border-color: var(--color-dark); }
+}
+
+
+.border-bottom-dark {
+    border-bottom: 0.125rem solid var(--color-secondary);
+    transition: 0.9s all;
+}
+
+.border-bottom-light {
+    border-bottom: 0.125rem solid var(--color-warning);
+    transition: 0.9s all;
+}
+
+.border-top-dark {
+    border-top: 0.125rem solid var(--color-secondary);
+    transition: 0.9s all;
+}
+
+.border-top-light {
+    border-top: 0.125rem solid var(--color-warning);
+    transition: 0.9s all;
+}
