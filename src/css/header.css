@@ -15,20 +15,17 @@
     font-family: var(--font-code);
     padding: 0 0 0.5rem 0;
     width: 100%;
-    max-width: 500px;    
+    max-width: 500px; 
+    font-size: var(--font-size-base);
+   
 
 }
 
-@media (width <= 450px){
-    #header h1 {
-        font-size: var(--font-size-base);
-    }
-}
 
 @media (width >= 451px) and (width <= 800px){
     #header h1 {
-        max-width: 450px;
-        font-size: var(--font-size-lg);
+        max-width: 585px;
+        font-size: var(--font-xl);
     }
 }
 
