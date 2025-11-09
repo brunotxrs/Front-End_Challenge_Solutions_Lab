@@ -5,6 +5,7 @@
     justify-content: center;
     padding: var(--spacing-base);
     max-width: 45.4375rem;
+    user-select: none;
 }
 
 @media (width >= 28.1875rem){
