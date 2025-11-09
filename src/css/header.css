@@ -6,7 +6,6 @@
     align-items: center;
     justify-content: center;
     padding: var(--spacing-base);
-    border-bottom: 0.125rem solid var(--color-secondary);
 }
 
 #header h1 {
