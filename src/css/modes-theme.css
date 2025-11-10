@@ -1,4 +1,4 @@
-.spacer-top {
+.space-top {
     height: 1.5rem;
     display: flex;
     justify-content: right;
@@ -6,10 +6,27 @@
     padding: 0 0 0 0;
     width: 100%;
     max-width: 800px;
+    position: relative;
     
 }
 
-.spacer-top .box-space-top {
+.back-page-index {
+    position: absolute;
+    height: 100%;
+    width: 100px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.25rem;
+    padding: 5px  0;
+    font-family: var(--font-code);
+    cursor: pointer;
+
+}
+
+
+.space-top .box-space-top {
     height: 100%;
     width: 50px;
     display: flex;
@@ -19,22 +36,25 @@
     padding: 5px  0;
 }
 
-.spacer-top .box-space-top #mode-dark, #mode-light{
+.space-top .box-space-top #mode-dark, 
+.space-top .box-space-top #mode-light {
     transition: 0.9s all;
 }
 
-.outline-light {
+.outline-theme-dark {
     outline: 1px solid var(--color-light);
     transition: 0.9s all;
 }
 
-.outline-dark {
+.outline-theme-light {
     outline: 1px solid var(--color-dark);
     transition: 0.9s all;
 }
 
-.outline-light:hover {
+.outline-theme-dark:hover {
     outline: 1px solid var(--color-secondary);
+    color: var(--color-secondary);
+    text-shadow: 0px 0px 2px var(--color-secondary);
 
     svg {
         fill: var(--color-secondary);
@@ -42,8 +62,10 @@
     }
 }
 
-.outline-dark:hover{
+.outline-theme-light:hover{
     outline: 1px solid var(--color-warning);
+    color: var(--color-warning);
+    text-shadow: 0px 0px 2px var(--color-warning);
 
     svg{
         fill: var(--color-warning);

@@ -4,14 +4,14 @@ function modeTheme() {
   // define every pair of classes you need to swap
   const swaps = [
     { sel: 'body',      dark: 'theme-dark',       light: 'theme-light'       },
-    { sel: '#animation',dark: 'animation-dark',   light: 'animation-light'   },
-    { sel: '#box-space-top', dark: 'outline-dark', light: 'outline-light' },
-    { sel: '#header',   dark: 'border-bottom-dark', light: 'border-bottom-light'},
-    { sel: '#footer',   dark: 'border-top-dark',   light: 'border-top-light'  },
-    { sel: '.links-dark,  .links-light',  dark: 'links-dark',  light: 'links-light' },
-    { sel: '.a-dark,      .a-light',      dark: 'a-dark',      light: 'a-light'     },
-    { sel: '.link-footer-dark, .link-footer-light', dark: 'link-footer-dark', light: 'link-footer-light' },
-    { sel: '.link-footer, .links-footer-light', dark: 'link-footer', light: 'links-footer-light' },
+    { sel: '#title-animation',dark: 'title-animation-dark',   light: 'title-animation-light'   },
+    { sel: '#box-space-top', dark: 'outline-theme-dark', light: 'outline-theme-light' },
+    { sel: '#border-bottom',   dark: 'border-bottom-dark', light: 'border-bottom-light'},
+    { sel: '#border-top',   dark: 'border-top-dark',   light: 'border-top-light'  },
+    { sel: '.route-links-dark,  .route-links-light',  dark: 'route-links-dark',  light: 'route-links-light' },
+    { sel: '.a-dark-before,      .a-light-before',      dark: 'a-dark-before',      light: 'a-light-before'     },
+    { sel: '.links-footer-dark, .links-footer-light', dark: 'links-footer-dark', light: 'links-footer-light' },
+    {sel: '.back-page-index', dark: 'outline-theme-dark', light: 'outline-theme-light' },
   ];
 
   function toggleAll(toDark) {
