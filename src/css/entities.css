@@ -10,33 +10,8 @@
     transition: 0.9s all;
 }
 
-.links-dark {
-    background: var(--color-light);
-    color: var(--color-dark);
-    transition: 0.9s all;
-}
-
-.links-dark:hover{
-    color: var(--color-light);
-    text-shadow: 1px 1px 2px var(--color-dark);
-}
-
-.links-light:hover{
-    color:  var(--color-dark);
-    text-shadow: 1px 1px 2px var(--color-light);
-}
-
-.links-light {
-    color: var(--color-light);
-    background: var(--color-dark);
-    transition: 0.9s all;
-}
-
-.hidden {
-    display: none;
-}
-
-.animation-dark {
+/* classe utilitárias do header*/
+.title-animation-dark {
     width: 0;
     overflow: hidden; 
     white-space: nowrap;
@@ -53,7 +28,7 @@
 
 }
 
-.animation-light {
+.title-animation-light {
     width: 0;
     overflow: hidden; 
     white-space: nowrap;
@@ -70,9 +45,37 @@
         blink-caret-light .50s step-end infinite;
 }
 
+/* ------------------- */
 
 
+/* classe utilitárias do main  */
+.route-links-dark {
+    background: var(--color-light);
+    color: var(--color-dark);
+    transition: 0.9s all;
+}
 
+.route-links-dark:hover{
+    color: var(--color-light);
+    text-shadow: 1px 1px 2px var(--color-dark);
+}
+
+.route-links-light {
+    color: var(--color-light);
+    background: var(--color-dark);
+    transition: 0.9s all;
+}
+
+.route-links-light:hover{
+    color:  var(--color-dark);
+    text-shadow: 1px 1px 2px var(--color-light);
+}
+
+/* --------------------- */
+
+.hidden {
+    display: none;
+}
 
 /* --- Keyframes da Animação de Digitação --- */
 @keyframes typing {
@@ -94,23 +97,70 @@
     50% { border-color: var(--color-dark); }
 }
 
-
+/* classe utilitárias do elemento borde bottom e top */
 .border-bottom-dark {
+    width: 100%;
+    max-width: 700px;
+
     border-bottom: 0.125rem solid var(--color-secondary);
     transition: 0.9s all;
 }
 
 .border-bottom-light {
+    width: 100%;
+    max-width: 700px;
     border-bottom: 0.125rem solid var(--color-warning);
     transition: 0.9s all;
 }
 
 .border-top-dark {
+    width: 100%;
+    max-width: 700px;
     border-top: 0.125rem solid var(--color-secondary);
     transition: 0.9s all;
 }
 
 .border-top-light {
+    width: 100%;
+    max-width: 700px;
     border-top: 0.125rem solid var(--color-warning);
     transition: 0.9s all;
 }
+
+/* -------------------- */
+
+
+/* classe utilitárias do footer  */
+.links-footer-dark {
+    color: var(--color-secondary);
+
+}
+
+.links-footer-dark:hover {
+    text-shadow: 0 0 0.3125rem var(--color-secondary);
+}
+
+.links-footer-light{
+    color: var(--color-warning);
+    
+}
+
+.links-footer-light:hover {
+    text-shadow: 0 0 0.3125rem var(--color-warning);
+}
+
+.links-footer-dark:hover,
+.links-footer-light:hover {
+    
+    .fa-code-fork,
+    span{
+        display: none;
+    }
+
+    .fa-github {
+        font-size: var(--font-size-lg);
+        display: inline;
+    }
+
+}
+/* -------------------- */
