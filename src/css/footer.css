@@ -53,8 +53,7 @@
     display: none;
 }
 
-.link-footer-dark,
-.link-footer-light {
+.collaboration a {
     width: 100%;
     height: 3.125rem;
     display: flex;
@@ -67,58 +66,20 @@
     font-weight: bold;
 }
 
+
+
 @media (width >= 28.1875rem){
-    .link-footer-dark,
-    .link-footer-light {
+    .collaboration a {
         height: 2.5rem;
         font-size: var(--font-size-ms);
     }
 }
 
 @media (width >= 50rem){
-    .link-footer-dark,
-    .link-footer-light {
+    .collaboration a {
         font-size: var(--font-size-base);
     }
 }
-
-.link-footer-dark, 
-.link-footer {
-    color: var(--color-secondary);
-
-}
-
-.link-footer-dark:hover,
-.link-footer:hover {
-    text-shadow: 0 0 0.3125rem var(--color-secondary);
-}
-
-.link-footer-light,
-.links-footer-light {
-    color: var(--color-warning);
-    
-}
-
-.link-footer-light:hover,
-.links-footer-light:hover {
-    text-shadow: 0 0 0.3125rem var(--color-warning);
-}
-
-.link-footer-dark:hover,
-.link-footer-light:hover {
-    
-    .fa-code-fork,
-    span{
-        display: none;
-    }
-
-    .fa-github {
-        font-size: var(--font-size-lg);
-        display: inline;
-    }
-
-}
-
 
 @media (width >= 28.1875rem){
     #footer .references {
@@ -149,7 +110,7 @@
     height: 3.125rem;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-evenly;
     gap: 0.5rem;
 }
@@ -166,15 +127,4 @@
     font-family: var(--font-code);
     text-decoration: none;
     font-weight: bold;
-}
-
-
-.link-footer {
-   font-size: var(--font-size-base);
-  
-}
-
-.links-footer-light {
-    font-size: var(--font-size-base);
-
 }
