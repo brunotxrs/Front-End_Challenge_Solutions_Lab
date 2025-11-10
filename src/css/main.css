@@ -112,12 +112,12 @@
      
 }
 
-.a-dark::before {
+.a-dark-before::before {
     background: var(--color-info);
     box-shadow: 0 0 0.625rem var(--color-info);
 }
 
-.a-light::before {
+.a-light-before::before {
     background: var(--color-warning);
     box-shadow: 0 0 0.625rem var(--color-warning); 
 }
