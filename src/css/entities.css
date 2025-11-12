@@ -55,20 +55,10 @@
     transition: 0.9s all;
 }
 
-.route-links-dark:hover{
-    color: var(--color-light);
-    text-shadow: 1px 1px 2px var(--color-dark);
-}
-
 .route-links-light {
     color: var(--color-light);
     background: var(--color-dark);
     transition: 0.9s all;
-}
-
-.route-links-light:hover{
-    color:  var(--color-dark);
-    text-shadow: 1px 1px 2px var(--color-light);
 }
 
 /* --------------------- */

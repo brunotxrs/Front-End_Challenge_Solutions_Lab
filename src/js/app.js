@@ -1,11 +1,8 @@
-import { modeTheme } from './modeTheme.js';
-import {  returnPageIndex  } from './returnPages.js';
-
+import { initializationApp } from './initialization.js'
 
 addEventListener('DOMContentLoaded', () => {
     
-    modeTheme();
-
-    returnPageIndex();
+    initializationApp() // função de inicialização do app tendo todas as outras funções 
+    
 });
 

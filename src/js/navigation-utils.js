@@ -1,4 +1,4 @@
-function returnPageIndex() {
+function returnToIndex() {
     const myBtnToBack = document.getElementById('back-page-index');
     const indexHtml = '../../index.html'
 
@@ -11,5 +11,4 @@ function returnPageIndex() {
     }
 }
 
-export { returnPageIndex };
-
+export { returnToIndex };
