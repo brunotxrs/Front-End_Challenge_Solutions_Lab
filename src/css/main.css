@@ -117,15 +117,27 @@
     box-shadow: 0 0 0.625rem var(--color-info);
 }
 
+/* manipulado com js */
+.a-dark-before.is-filled {
+    color: var(--color-light);
+    text-shadow: 1px 1px 2px var(--color-dark);
+}
+
 .a-light-before::before {
     background: var(--color-warning);
     box-shadow: 0 0 0.625rem var(--color-warning); 
 }
 
+/* manipulado com js */
+.a-light-before.is-filled {
+    color:  var(--color-dark);
+    text-shadow: 1px 1px 2px var(--color-light);
+}
 
-#main section ul li:nth-child(1) a:hover .fa-right-long,
-#main section ul li:nth-child(2) a:hover .fa-right-long,
-#main section ul li:nth-child(3) a:hover .fa-right-long {
+/* manipulado com js */
+#main section ul li:nth-child(1) a.is-filled .fa-right-long,
+#main section ul li:nth-child(2) a.is-filled .fa-right-long,
+#main section ul li:nth-child(3) a.is-filled .fa-right-long {
     display: inline;
     position: absolute;
     transition: 0.5s;
@@ -137,36 +149,43 @@
 /* Adjustments for different screen sizes */
 
 @media (min-width: 376px) and (max-width: 450px){
-    #main section ul li:nth-child(1) a:hover .fa-right-long,
-    #main section ul li:nth-child(2) a:hover .fa-right-long,
-    #main section ul li:nth-child(3) a:hover .fa-right-long {
+
+    /* manipulado com js */
+    #main section ul li:nth-child(1) a.is-filled .fa-right-long,
+    #main section ul li:nth-child(2) a.is-filled .fa-right-long,
+    #main section ul li:nth-child(3) a.is-filled .fa-right-long {
         transform: translateX(302px);
     }
 }
 
 
 @media (min-width: 451px) and (max-width: 800px){
-    #main section ul li:nth-child(1) a:hover .fa-right-long,
-    #main section ul li:nth-child(2) a:hover .fa-right-long,
-    #main section ul li:nth-child(3) a:hover .fa-right-long {
+
+    /* manipulado com js */
+    #main section ul li:nth-child(1) a.is-filled .fa-right-long,
+    #main section ul li:nth-child(2) a.is-filled .fa-right-long,
+    #main section ul li:nth-child(3) a.is-filled .fa-right-long {
         transform: translateX(370px);
     }
 }
 
 @media (min-width: 50rem){
-    #main section ul li:nth-child(1) a:hover .fa-right-long,
-    #main section ul li:nth-child(2) a:hover .fa-right-long,
-    #main section ul li:nth-child(3) a:hover .fa-right-long {
+
+    /* manipulado com js */
+    #main section ul li:nth-child(1) a.is-filled .fa-right-long,
+    #main section ul li:nth-child(2) a.is-filled .fa-right-long,
+    #main section ul li:nth-child(3) a.is-filled .fa-right-long {
         transform: translateX(31.25rem);
     }
 }
 
-#main section ul li a:hover::before {
+#main section ul li a.is-filled::before {
     transform: scaleX(1);
 }
 
-#main section ul li a:hover i,
-#main section ul li a:hover span {
+/* manipulado com js */
+#main section ul li a.is-filled i,
+#main section ul li a.is-filled span {
     transform: rotateX(360deg);
 
 }
