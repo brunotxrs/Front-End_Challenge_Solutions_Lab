@@ -2,11 +2,28 @@ function returnToIndex() {
     const myBtnToBack = document.getElementById('back-page-index');
     const indexHtml = '../../index.html'
 
+    const REDIRECT_DELAY = 1000;
+
     if (myBtnToBack) {
 
-        myBtnToBack.addEventListener('click', () => {
+        myBtnToBack.addEventListener('click', function(event){
 
-            window.location.href = indexHtml; 
+            event.preventDefault();
+
+            
+            if(myBtnToBack.classList.contains('filled-left')){
+                return;
+            }
+
+            myBtnToBack.classList.add('filled-left');
+
+
+            setTimeout(() => {
+
+                window.location.href = indexHtml; 
+
+            }, REDIRECT_DELAY);
+
         });
     }
 }
