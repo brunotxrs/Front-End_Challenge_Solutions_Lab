@@ -88,15 +88,11 @@
     }
 }
 
-#main section ul li:nth-child(1) a .fa-right-long,
-#main section ul li:nth-child(2) a .fa-right-long,
-#main section ul li:nth-child(3) a .fa-right-long {
+#main section ul li a .fa-right-long {
     display: none;
 }
 
-#main section ul li:nth-child(1) a::before,
-#main section ul li:nth-child(2) a::before,
-#main section ul li:nth-child(3) a::before {
+#main section ul li a::before {
     content: '';
     position: absolute;
     top: 0;
@@ -135,9 +131,7 @@
 }
 
 /* manipulado com js */
-#main section ul li:nth-child(1) a.is-filled .fa-right-long,
-#main section ul li:nth-child(2) a.is-filled .fa-right-long,
-#main section ul li:nth-child(3) a.is-filled .fa-right-long {
+#main section ul li a.is-filled .fa-right-long {
     display: inline;
     position: absolute;
     transition: 0.5s;
