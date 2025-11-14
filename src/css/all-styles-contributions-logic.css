@@ -1,0 +1,49 @@
+.logica-promacao {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: 700px;
+
+    background-color: var(--color-dark);
+
+}
+
+.logica-promacao section .language-logica-promacao {
+    text-align: left !important;
+    font-family: var(--font-code);
+    color: var(--color-light);
+    
+}
+
+
+.container-contributor {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: start;
+    gap: 10px;
+    width: 100%;
+    justify-content: right;
+    max-width: 700px;
+
+}
+
+.container-contributor .contributor-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container-contributor  span h2 {
+    font-family: var(--font-code);
+    font-size: var(--font-size-base);    
+}
+
+.container-contributor .contributor-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 5px 0;
+}
